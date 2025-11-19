@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logismart</title>
+    <link rel="icon" href="../FOTOS/LOGO/logoLogis.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/sidebar/sidebar.css">
+    <link rel="stylesheet" href="../CSS/categorias/usuario.css">
+    <script src="../JS/Poslogin.js"></script>
+    <script src="../JS/usuario.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav onclick="muda()" id="barraLateral">
+
+<div id="barraLateralContent">
+        <div class="user">
+            <img id="fotoDePerfiL" src="../FOTOS/LOGO/images.jpeg" alt="">
+        </div>
+
+        <ul>
+          
+            <li ><a href="Poslogin.html"  class="itens">
+                <i class="fa-solid fa-house"></i>
+                <span class="descricao">Página inicial</span>
+            </a></li>
+             <li class="selected">
+                <a href="usuario.html" class="itens">
+                    <i class="fa-solid fa-user"></i>
+                <span class="descricao">Usuário</span></a>
+            </li>
+            <li><a href="loja.html" class="itens">
+              <i class="fa-solid fa-store"></i>  </i>
+            <span class="descricao">Loja</span>
+            </a></li>
+            <li><a href="" class="itens">
+<i class="fa-solid fa-chart-line"></i>
+<span>Vendas</span>
+
+            </a></li>
+            <li><a href="armazenamento.html" class="itens">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <span class="descricao">Armazenamento</span>
+            </a></li>
+        </ul>
+        
+</div>
+<div class="logout">
+
+        <div id="segura" class="separaLogo" onclick="principal()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        <span class="descricao">Logout</span>
+        </div>
+        
+        </div>
+    </nav>
+
+
+
+<main id="user" class="boxVoadora">
+<div class="boxDentro">
+    
+<div class="config">
+    <h2>Configurações de Usuário</h2>
+</div>
+
+<div class="fotoUser">
+<img src="../FOTOS/ALIMENTOS/Arroz.png" alt="">
+</div>
+
+<div class="inform">
+    <h2>Informações</h2>
+    <input type="text" placeholder="Nome de Usuário"> <input type="text" placeholder="Nome Completo"> 
+</div>
+<div class="senha">
+    <h2>Segurança e acesso</h2>
+    <input type="text" placeholder="email"> <input type="password" placeholder="senha"> 
+</div>
+</div>
+
+
+
+    </main>
+    
+</body>
+</html>

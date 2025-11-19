@@ -1,0 +1,25 @@
+ body {
+      font-family: sans-serif;
+   
+      background-color: #d8d8d8;
+    }
+    canvas {
+      max-width: 900px;
+      margin: 40px auto;
+    }
+
+    #mainvendas{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #graficoVendas {
+        position: absolute;
+ max-height: 60%;
+;
+}
+
+h1{
+    margin-top: 10px;
+}

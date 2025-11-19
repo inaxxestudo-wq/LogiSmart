@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gráfico de Vendas</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/sidebar/sidebar.css">
+  <link rel="stylesheet" href="../CSS/categorias/vendas.css">
+  <script src="../JS/vendas.js"></script>
+
+</head>
+<body>
+
+
+    <nav onclick="muda()" id="barraLateral">
+
+<div id="barraLateralContent">
+        <div class="user">
+            <img src="../FOTOS/LOGO/images.jpeg" alt="">
+        </div>
+
+        <ul>
+          
+ <li><a href="Poslogin.html" class="itens">
+ <i class="fa-solid fa-house"></i>
+<span>Página inicial</span>
+  </a></li>     
+            <li>
+                <a href="usuario.html" class="itens">
+                    <i class="fa-solid fa-user"></i>
+                <span class="descricao">Usuário</span></a>
+            </li>
+            <li><a href="loja.html" class="itens">
+              <i class="fa-solid fa-store"></i>  </i>
+            <span class="descricao">Loja</span>
+            </a></li>
+           
+
+<li class="selected"><a href="vendas.html" class="itens">
+<i class="fa-solid fa-chart-line"></i>
+<span>Vendas</span>
+            </a></li>
+
+            </a></li>
+            <li><a href="armazenamento.html" class="itens">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <span class="descricao">Armazenamento</span>
+            </a></li>
+        </ul>
+        
+</div>
+<div class="logout">
+
+        <div id="segura" class="separaLogo" onclick="principal()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        <span class="descricao">Logout</span>
+        </div>
+        
+        </div>
+    </nav>
+
+    <main id="mainvendas">
+  <h1>Vendas nos Últimos 30 Dias</h1>
+  <p id="totalVendas" style="font-weight: bold; font-size: 18px;"></p>
+  <canvas id="graficoVendas" width="800" height="400"></canvas>
+</main>
+  <script>
+  //Anotação do Fco inácio: Código gerado por IA pois não tive  tempo de fazer ele.
+    
+    // Simulando dados de vendas
+    const vendas = Array.from({ length: 30 }, () => Math.floor(Math.random() * 100));
+    const total = vendas.reduce((acc, val) => acc + val, 0);
+
+    // Dias (últimos 30 dias)
+    const dias = Array.from({ length: 30 }, (_, i) => `Dia ${i + 1}`);
+
+    // Exibir total de vendas
+    document.getElementById("totalVendas").textContent = `Total de Vendas: ${total} unidades`;
+
+    // Criando o gráfico
+    const ctx = document.getElementById('graficoVendas').getContext('2d');
+    new Chart(ctx, {
+      type: 'line', // ou 'bar'
+      data: {
+        labels: dias,
+        datasets: [{
+          label: 'Unidades Vendidas',
+          data: vendas,
+          fill: true,
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 2,
+          tension: 0.3
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+    
+  </script>
+
+</body>
+</html>

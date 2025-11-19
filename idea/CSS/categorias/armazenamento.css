@@ -1,0 +1,193 @@
+#quatidade{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    overflow-x:auto;
+     justify-content: center;
+ 
+  width: 1000px;
+ 
+
+}
+
+ img{
+    width: 130px;
+}
+.arroz, .macarrao{
+    display: flex;
+  flex-direction:column;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);  
+   border-radius: 10px;
+  padding: 5px;
+   margin: 20px;
+   transition: background-color 0.3s ;
+   justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    transition: 0.5s;
+   cursor: pointer;
+   max-width: 150px;
+   min-width: 150px;
+   max-height: 500px;
+   min-height: auto;
+}
+
+
+
+.arroz:hover, .macarrao:hover{
+color: white;
+   background-color: #361f65;
+ 
+}
+
+#tipo{
+
+   justify-content:start;
+}
+
+.fotoAlimento{
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img{
+
+    width: 200px;
+}
+.logo{
+    text-align: center;
+}
+
+.texto{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#altura{
+
+    align-items: start;
+}
+
+
+.organizar{
+    display: flex;
+    justify-content: center;
+    
+}
+.btt{
+    margin: 40px;
+    padding: 10px;
+    background-color: #ffbc0b;
+    text-decoration: none;
+ border-radius: 10px;
+ color: black;
+ transition: 0.3s;
+}
+
+.btt:hover{
+    background-color: #361f65;
+    color: white;
+}
+.sub{
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);  
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.add h2{
+
+    margin-bottom: 20px;
+    margin-top: 5px;
+   
+}
+
+#adicionarpp{
+    display: flex;
+    justify-content: center;
+padding: 3px;;
+    width: 200px;
+    background-color: #ffbc0b;
+    border-radius: 0px 0px 100px 100px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    
+
+}
+#adicionarpp:hover{
+    background-color: #361f65;
+    color: white;
+    padding: 5px
+}
+#linkMeio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.volta{
+    position: absolute;
+    top: 49.8%;left: 83%;
+    text-decoration: none;
+    color: black;
+    background-color: #ffbc0b;
+    padding: 4px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.volta:hover{
+
+    background-color: #361f65;
+    color: white;
+ padding: 5px;
+}
+
+.peso{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.macarrao input,.macarrao button
+{
+    cursor: pointer;
+    opacity: 0%;
+    transition: 0.2s;
+}
+
+
+
+.macarrao:hover input, .macarrao:hover button{
+opacity: 100%;
+    background-color: white;
+    
+}
+
+#faltando{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  
+}
+.todas{
+   display: flex;
+  overflow-x: scroll;
+  margin-left: auto;
+ 
+}
+.verm{
+    background-color: #dda818;;
+}

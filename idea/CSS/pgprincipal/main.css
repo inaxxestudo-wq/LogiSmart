@@ -1,0 +1,78 @@
+main{margin-top: 10px;
+    text-align: center;
+}
+h1{
+    color:black;
+}
+
+#fotoSemi{
+    width: 250px;
+}
+
+
+main h1{
+    color:#f9a62a;
+text-decoration:underline;
+text-decoration-color:  #361f65;;
+text-align: center;
+;;}
+
+
+
+
+main h2{
+    color:#361f65;
+    display: block;
+   text-align: center;
+}
+.container {
+  display: flex;
+  margin-top: 25px;
+
+flex-direction:row;
+color: white;
+justify-content: center;
+padding: 10px;
+margin-bottom: 25px;
+}
+
+.container h2{
+  color: #f9a62a;
+}
+
+.boxleft, .boxright{
+  width: 900px;
+  background-color: #361f65;
+ padding: 10px;
+ border-radius: 20px;
+ font-size: 20px;
+}
+
+main img{
+  width:900px ;
+
+}
+
+
+
+.imgComece{
+  position: relative;
+}
+
+.botao{
+ position: absolute;
+  top: 99.1%; left: 28.7%;
+background-color: #361f65; color: white;
+padding: 20px 67px; border-radius: 15px;
+text-decoration: none; font-weight: bold;
+transition: background-color 0.33s;
+
+}
+.botao:hover{
+  background-color: white;
+  color: black;
+}
+
+*{ 
+font-family: "Share Tech", sans-serif;
+}

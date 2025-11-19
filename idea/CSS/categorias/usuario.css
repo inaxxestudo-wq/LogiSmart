@@ -1,0 +1,63 @@
+#user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+
+div h2{
+ margin-bottom: 12px;
+
+}
+
+.ipt{
+    background-color: #ffbc0b;;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 15px;
+}
+
+.ipt:hover{
+    background-color: #361f65;;
+    color: white;
+}
+input{
+    cursor: pointer;
+}
+.contorno{
+    border: solid 1px black;
+padding: 4%;
+border-radius: 10px;
+text-align: center;
+}
+
+#att{
+    margin-top: 25px;
+}
+
+#att a{
+
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ffbc0b;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+#att a:hover{
+background-color:#361f65;
+color: white;
+
+}
+
+.boxVoadora {
+display: flex;
+background-color: rgb(221, 220, 220);
+}
+
+.boxDentro{
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}

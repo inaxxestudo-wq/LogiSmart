@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente no centro */
+    align-items: center; /* Alinha verticalmente no centro */
+    height: 100vh; /* Define a altura da tela */
+    margin: 0; /* Remove margens padrão */
+    background-color:#361f65;;; /* Cor de fundo opcional */
+}
+
+#box {
+    text-align: center;
+    background-color: white; /* Cor de fundo da caixa */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+h3 {
+    margin: 0 0 20px; /* Margem abaixo do título */
+}
+
+div {
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+button{
+    background-color: yellow;
+    border: 0px;
+    cursor: pointer;
+    padding: 7px;
+    border-radius:6px;
+  
+}
+
+img{
+    width: 200px;
+}
+
+#OlhoSenha{
+    width: 20px;
+   color: rgb(250, 150, 150);
+}
+
+#senha{
+    margin-left: 10px;
+}
+#ese{
+    display: none;
+    color: red;
+}
+#criar{
+    display: none;
+    background-color: #d94e3d;
+}
+
+#botoes{
+    margin-top: 30px;
+}
+
+#voltar{
+    margin-left: 12px;
+    background-color:#361f65 ;
+    color: white;
+}
+#logar{
+    margin-right: 12px;
+}
+
+#corpo{
+
+    display: flex;
+    flex-direction: column;
+   justify-content: start;
+}
+
+#logo{
+    width: 250px;
+}
