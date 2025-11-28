@@ -1,15 +1,5 @@
 
 
-
-function carregar(){
-    let arroz = document.getElementById("PesoArroz")
-arroz.innerText = localStorage.getItem("PesoArroz")
-let macarrao = document.getElementById("PesoMacarrao")
-macarrao.innerHTML = localStorage.getItem("PesoMacarrao")
-let feijao = document.getElementById("PesoFeijao")
-feijao.innerHTML = localStorage.getItem("Pesofeijao")
-}
-
 function arr(){
 
     

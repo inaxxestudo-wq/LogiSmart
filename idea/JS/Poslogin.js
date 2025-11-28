@@ -1,13 +1,3 @@
-document.getElementById("barraLateral")
-document.getElementById("logout")
-nome = window.localStorage.getItem("conta")
-
-
-
-
-window.onload = function(){
-document.getElementById("EMPRESA").innerHTML = "Bem vindo, "+nome
-}
 
 
 function principal(){
@@ -20,11 +10,14 @@ function config(){
 }
 
 function carregar(){
+ var user =    localStorage.getItem("nomeUser")
+var ftUserSide = document.getElementById("ftUser")
+ftUserSide.src = localStorage.getItem(("imgUser"))
 var lista =JSON.parse( localStorage.getItem("produtos"))
 var div = document.getElementById("faltando")
 let i =0
-
-
+var nome = document.getElementById("EMPRESA")
+nome.innerText="Bem vindo, "+user
 for(;i<lista.length;i++){
 var item = lista[i]
 if(lista[i].pesoMax<=lista[i].pesoMin)console.log(item.nome)
