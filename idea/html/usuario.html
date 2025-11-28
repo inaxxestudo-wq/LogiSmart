@@ -13,14 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+  <script src="../JS/alterarFtUser.js"></script>
+
 </head>
-<body>
+<body onload="carregaftUser()">
 
     <nav onclick="muda()" id="barraLateral">
 
 <div id="barraLateralContent">
         <div class="user">
-            <img id="fotoDePerfiL" src="../FOTOS/LOGO/images.jpeg" alt="">
+            <img id="ftUser" src="../FOTOS/LOGO/images.jpeg" alt="">
         </div>
 
         <ul>
@@ -59,9 +61,6 @@
         
         </div>
     </nav>
-
-
-
 <main id="user" class="boxVoadora">
 <div class="boxDentro">
     
@@ -70,17 +69,20 @@
 </div>
 
 <div class="fotoUser">
-<img src="../FOTOS/ALIMENTOS/Arroz.png" alt="">
+<img src="../FOTOS/LOGO/images.jpeg" alt="" id="ftUserMain" class="demo">
+<div><input type="file" id="fotoArquivo" ></div>
+
 </div>
 
 <div class="inform">
     <h2>Informações</h2>
-    <input type="text" placeholder="Nome de Usuário"> <input type="text" placeholder="Nome Completo"> 
+    <input type="text" placeholder="Nome da Empresa" class="inputTXT" id="nomeUser"> <input type="text" placeholder="Nome Completo" class="inputTXT"> 
 </div>
 <div class="senha">
     <h2>Segurança e acesso</h2>
-    <input type="text" placeholder="email"> <input type="password" placeholder="senha"> 
+    <input type="email" placeholder="email" class="inputTXT"> <input type="password" placeholder="senha" class="inputTXT"> 
 </div>
+<p class="sub" onclick="enviarFTUSER()">Enviar</p>
 </div>
 
 

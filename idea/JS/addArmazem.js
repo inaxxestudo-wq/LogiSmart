@@ -30,4 +30,5 @@ function add() {
   };
 
   leitor.readAsDataURL(arquivo);
+  
 }

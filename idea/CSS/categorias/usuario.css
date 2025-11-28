@@ -61,3 +61,48 @@ background-color: rgb(221, 220, 220);
     padding: 40px;
     border-radius: 10px;
 }
+
+ .inputTXT{
+
+    padding: 8px;
+    border-radius: 6px;
+    border-color: #ffbc0b;
+ 
+ }
+
+ .demo{
+    border-radius: 50%;
+  height: 100px;
+  width: 100px;
+    max-height:100px ;
+    max-width: 100px;
+ }
+ .fotoUser{
+    text-align: center;
+ }
+
+ .boxDentro{
+   gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+ }
+ .sub{
+        bottom: 5px;
+    background-color:#361f65;
+    padding: 8px;
+    color: white;
+    border-radius: 10px;
+transition: background-color 0.36s ease;
+ }
+ .sub:hover{
+    cursor: pointer;
+  background-color: #ffbc0b;
+ }
+ 
+.sub:active{
+    background-color: black;
+   animation-delay: 1s;
+}

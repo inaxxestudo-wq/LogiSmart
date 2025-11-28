@@ -9,16 +9,18 @@
   <link rel="stylesheet" href="../CSS/sidebar/sidebar.css">
   <link rel="stylesheet" href="../CSS/categorias/vendas.css">
   <script src="../JS/vendas.js"></script>
+  <script src="../JS/alterarFtUser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
-<body>
+<body onload="carregar()">
 
 
     <nav onclick="muda()" id="barraLateral">
 
 <div id="barraLateralContent">
         <div class="user">
-            <img src="../FOTOS/LOGO/images.jpeg" alt="">
+            <img src="../FOTOS/LOGO/images.jpeg" alt="" id="ftUser">
         </div>
 
         <ul>
@@ -63,50 +65,10 @@
 
     <main id="mainvendas">
   <h1>Vendas nos Últimos 30 Dias</h1>
-  <p id="totalVendas" style="font-weight: bold; font-size: 18px;"></p>
-  <canvas id="graficoVendas" width="800" height="400"></canvas>
+  <canvas id="meuGrafico" width="800" height="400px" min-height = "600"></canvas>
+
 </main>
-  <script>
-  //Anotação do Fco inácio: Código gerado por IA pois não tive  tempo de fazer ele.
-    
-    // Simulando dados de vendas
-    const vendas = Array.from({ length: 30 }, () => Math.floor(Math.random() * 100));
-    const total = vendas.reduce((acc, val) => acc + val, 0);
-
-    // Dias (últimos 30 dias)
-    const dias = Array.from({ length: 30 }, (_, i) => `Dia ${i + 1}`);
-
-    // Exibir total de vendas
-    document.getElementById("totalVendas").textContent = `Total de Vendas: ${total} unidades`;
-
-    // Criando o gráfico
-    const ctx = document.getElementById('graficoVendas').getContext('2d');
-    new Chart(ctx, {
-      type: 'line', // ou 'bar'
-      data: {
-        labels: dias,
-        datasets: [{
-          label: 'Unidades Vendidas',
-          data: vendas,
-          fill: true,
-          backgroundColor: 'rgba(75, 192, 192, 0.2)',
-          borderColor: 'rgba(75, 192, 192, 1)',
-          borderWidth: 2,
-          tension: 0.3
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-
-    
-  </script>
+  
 
 </body>
 </html>

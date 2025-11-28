@@ -10,20 +10,25 @@
     <link rel="stylesheet" href="../CSS/categorias/armazenamento.css">
     <script src="../JS/Poslogin.js"></script>
 <script src="../JS/addArmazem.js"></script>
+<script src="../JS/ListarArmazenamento.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="carregaLista()">
 
     <nav onclick="muda()" id="barraLateral">
 
 <div id="barraLateralContent">
         <div class="user">
-            <img src="../FOTOS/LOGO/images.jpeg" alt="">
+            <img src="../FOTOS/LOGO/images.jpeg" alt="" id="ftUser">
         </div>
 
         <ul>
+            <li ><a href="Poslogin.html"  class="itens">
+                <i class="fa-solid fa-house"></i>
+                <span class="descricao">Página inicial</span>
+            </a></li>
             <li>
                 <a href="usuario.html" class="itens">
                     <i class="fa-solid fa-user"></i>
@@ -38,22 +43,16 @@
 <span>Vendas</span>
 
             </a></li>
-            <li ><a href="Poslogin.html"  class="itens">
-                <i class="fa-solid fa-house"></i>
-                <span class="descricao">Página inicial</span>
+            <li class="selected"><a href="armazenamento.html" class="itens">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <span class="descricao">Armazenamento</span>
             </a></li>
+            
         </ul>
         
 </div>
 <div class="logout">
-<div id="segura" onclick="config()">
-     
 
-<i class="fa-solid fa-gear"></i>
-        <span class="descricao">Configuração</span>
-       
-     
-        </div>
 
         <div id="segura" class="separaLogo" onclick="principal()">
             <i class="fa-solid fa-right-from-bracket"></i>

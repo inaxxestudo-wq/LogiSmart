@@ -1,5 +1,7 @@
 var lista =JSON.parse( localStorage.getItem("produtos"))
 function carregaLista(){
+var ftUserSide = document.getElementById("ftUser")
+ftUserSide.src = localStorage.getItem(("imgUser"))
 var lista =JSON.parse( localStorage.getItem("produtos"))
 
 
