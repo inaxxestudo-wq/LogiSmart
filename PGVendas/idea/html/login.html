@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/pgprincipal/LOGIN.CSS">
+   <title>Logismart</title> 
+    <link rel="icon" href="../FOTOS/LOGO/logoLogis.png" type="image/png">
+</head>
+<body id="corpo">
+    
+    <header><img id="logo" src="../FOTOS/LOGO/logoLogis.png" alt=""></header>
+
+    
+<div id="box">
+<h3>Login</h3>
+<div>
+   <p>Email</p> 
+    <input type="" name="" placeholder="Email" onblur="EMAIL()" onfocus="eFOCO()" id="email">
+</div>
+<div>
+    <p>Senha</p>
+    <input type="password" name="" placeholder="Senha" onblur="SENHA()"  onfocus="sFOCO()" id="senha"><img src="../FOTOS/LOGO/senhainvi.png" id="OlhoSenha" onclick="OlhoFe()" alt="">
+<p id="ese">Email ou senha errados</p>
+</div>
+<div id="botoes">
+    
+    <button id="logar" onclick="TODOS()">Logar</button> <button id="voltar" onclick="voltar()">Voltar</button>
+</div>
+<button id="criar" onclick="criar()">Não tem conta? criar</button>
+
+</div>
+
+</body>
+<script src="../JS/Login.js"></script>
+<script src="../JS/TODOS.js"></script>
+
+</html>

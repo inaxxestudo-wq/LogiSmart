@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gráfico de Vendas</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/sidebar/sidebar.css">
+  <link rel="stylesheet" href="../CSS/categorias/vendas.css">
+  <link rel="stylesheet" href="../CSS/checkbox.css">
+  <script src="../JS/vendas.js"></script>
+  <script src="../JS/alterarFtUser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+<script>
+  function iniciar(){
+carregarCheck()
+carregar()
+  }
+</script>
+</head>
+<body onload="iniciar()">
+
+
+    <nav onclick="muda()" id="barraLateral">
+
+<div id="barraLateralContent">
+        <div class="user">
+            <img src="../FOTOS/LOGO/images.jpeg" alt="" id="ftUser">
+        </div>
+
+        <ul>
+          
+ <li><a href="Poslogin.html" class="itens">
+ <i class="fa-solid fa-house"></i>
+<span>Página inicial</span>
+  </a></li>     
+            <li>
+                <a href="usuario.html" class="itens">
+                    <i class="fa-solid fa-user"></i>
+                <span class="descricao">Usuário</span></a>
+            </li>
+            <li><a href="loja.html" class="itens">
+              <i class="fa-solid fa-store"></i>  </i>
+            <span class="descricao">Loja</span>
+            </a></li>
+           
+
+<li class="selected"><a href="vendas.html" class="itens">
+<i class="fa-solid fa-chart-line"></i>
+<span>Vendas</span>
+            </a></li>
+
+            </a></li>
+            <li><a href="armazenamento.html" class="itens">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <span class="descricao">Armazenamento</span>
+            </a></li>
+        </ul>
+        
+</div>
+<div class="logout">
+
+        <div id="segura" class="separaLogo" onclick="principal()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        <span class="descricao">Logout</span>
+        </div>
+        
+        </div>
+    </nav>
+
+    <main id="mainvendas">
+      <div class="alinharGraficos">
+      <div class="box" class="grafico">
+  <h1>Faturamento do Mês</h1>
+  <canvas id="meuGrafico" width="800" height="400px" min-height = "600" ></canvas>
+
+</div>
+
+<div class="box" class="grafico">
+  <h1>Saídas do mês</h1>
+   <canvas id="meuPreju" width="800" height="400px" min-height = "600"></canvas>
+
+  </div>
+  </div>
+
+      <div class="alinharGraficos separaLogo">
+      <div class="box" class="grafico">
+  <h1>Formas de Pagamento</h1>
+  <canvas id="meuFormaPg" width="800" height="400px" min-height = "600" ></canvas>
+
+</div>
+
+  </div>
+
+ <div class="enviarValor" >
+  <input type="text"placeholder ="Escreva o valor" id="iptValor">
+  <p class="btn" onclick="registrar()">Registrar vendas</p>
+
+  <div class="checks">
+    <div class="contCheck" onclick="registro()" id="registrar"><p>Registrar</p></div>
+    <div class="contCheck" onclick="busca()" id="buscar"><p>Buscar</p></div>
+    <div class="contCheck" onclick="apaga()" id="Apagar"><p>Apagar</p></div>
+   
+    
+
+
+  </div>
+  </div>
+</main>
+  
+   
+</body>
+<script src="../JS/checkboxVendas.js"></script>
+</html>

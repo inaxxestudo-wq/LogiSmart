@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--hex roxo :    amarelo: -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/pgprincipal/LOGIN.CSS">
+    <link rel="stylesheet" href="../CSS/criar.css">
+    <link rel="stylesheet" href="../CSS/CriarConta.css">
+   <title>Logismart</title> 
+    <link rel="icon" href="../FOTOS/LOGO/logoLogis.png" type="image/png">
+</head>
+<body id="corpo">
+    
+    <header><img id="logo" src="../FOTOS/LOGO/foto6.png" alt=""></header>
+
+    <img src="../FOTOS/LOGO/logoLogis.png" alt="">
+<div id="box">
+</button> <h3>Criar conta</h3>
+<div>
+   <p>Email</p> 
+    <input type="" name="" placeholder="Email" onblur="EMAIL()" onfocus="eFOCO()" id="email">
+    <p id="emailCss"></p>
+</div>
+<div>
+    <p>Senha</p>
+    <input type="password" name="" placeholder="Senha" onblur="SENHA()"  onfocus="sFOCO()" id="senha"><img src="../FOTOS/LOGO/senhainvi.png" id="OlhoSenha" onclick="OlhoFe()" alt="">
+<p id="senhaCss"></p>
+</div>
+
+<div>
+    <p>Nome da empresa</p> 
+     <input type="" name="" placeholder="Nome" onblur="NOME()" onfocus="nFOCO()" id="nome">
+     <p id="nomeCss"></p>
+ </div>
+
+ <div>
+    <p>CNPJ</p> 
+     <input type="text" name="" placeholder="CNPJ" onblur="DATA()" onfocus="dFOCO()" id="data">
+     <p id="dataCss"></p>
+ </div>
+
+<div class="separa">
+    
+    <button id="logar" onclick="enviar()">Criar</button><button id="retorna"><a  href="login.html">voltar</a> </button>
+</div>
+
+<!-- final da div box -->
+</div>
+
+</body>
+<script src="../JS/CriarConta.js"></script>
+<script src="../JS/enviar.jsx"></script>
+</html>
