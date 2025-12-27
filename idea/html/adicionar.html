@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/divLateralAddTag.css">
 </head>
 <body onload="carregaLista()">
 
@@ -34,10 +35,7 @@
                     <i class="fa-solid fa-user"></i>
                 <span class="descricao">Usuário</span></a>
             </li>
-            <li><a href="loja.html" class="itens">
-              <i class="fa-solid fa-store"></i>  </i>
-            <span class="descricao">Loja</span>
-            </a></li>
+           
             <li><a href="" class="itens">
 <i class="fa-solid fa-chart-line"></i>
 <span>Vendas</span>
@@ -65,10 +63,6 @@
 
 
     <main id="altura" >
-
-
-
-
        <div class="coluna" id="linkMeio">
 
 <div class="logo">
@@ -77,8 +71,9 @@
 </div>
 <div class="texto"><h1>Adicionar</h1></div>
 
+<div class="container">
 
-<div class="sub">
+<div class="sub" id="principalSub">
 <a class="volta" href="armazenamento.html">Voltar</a>
     <div class="add">
 <h2>Foto do produto</h2>
@@ -87,12 +82,20 @@
 <h2>Nome do Produto</h2>
 <input type="text" name="" id="nome">
 </div>
+    <div class="add" id="divSelect">
+<h2>Categoria do Produto</h2>
+<select name="" id="selecionarCategoria">
+    <option value="" disabled selected>Selecionar</option>
+    
+</select>
+<p class="btn" onclick="aparecer()">criar categoria</p>
+</div>
     <div class="add">
-<h2>Quantidade mínima (em KG)</h2>
+<h2>Quantidade mínima</h2>
 <input type="text" name="" id="pMin">
 </div>
     <div class="add">
-<h2>Quantidade máxima (em KG)</h2>
+<h2>Quantidade em estoque</h2>
 <input type="text" name="" id="pMax">
 </div>
 
@@ -100,12 +103,21 @@
 
 
 
+    </div>
+
+
+<div class="sub2content" id="divSec">
+    <div class="sub2">
+    <h2>Qual tag deseja criar?</h2>
+    <input type="text" placeholder="Escreva aqui a categoria" id="inputCategoria">
+</div>
+<p id="adicionarpp" onclick="criarCategoria()">Criar categoria</p>
+</div>
 </div>
 
 
 
-<p id="adicionarpp" onclick="add()">Criar</p>
-
+<p id="adicionarppp"  onclick="add()">Criar</p>
     </main>
 </body>
 </html>

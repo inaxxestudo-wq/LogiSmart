@@ -28,6 +28,17 @@ document.getElementById("quatidade").innerHTML +=
 
 
 
+
+if(location.href.endsWith("adicionar.html")){
+
+var selecionarCategoria = document.getElementById("selecionarCategoria")
+var categorias = JSON.parse(localStorage.getItem("categorias")) ||[]
+categorias.sort()
+for(let i =0;i<categorias.length;i++)
+
+selecionarCategoria.innerHTML += `<option value="${categorias[i]}">${categorias[i]}</option>`
+}
+
 }
 
 //function divMC(){

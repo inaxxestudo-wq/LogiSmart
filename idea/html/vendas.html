@@ -8,12 +8,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/sidebar/sidebar.css">
   <link rel="stylesheet" href="../CSS/categorias/vendas.css">
-  <script src="../JS/vendas.js"></script>
+  <link rel="stylesheet" href="../CSS/checkbox.css">
+ 
   <script src="../JS/alterarFtUser.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../JS/vendas.js"></script>
+<script src="../JS/checkboxVendas.js"></script>
 
+
+<script>
+  function iniciar(){
+carregarCheck()
+carregar()
+  }
+</script>
 </head>
-<body onload="carregar()">
+<body onload="iniciar()">
 
 
     <nav onclick="muda()" id="barraLateral">
@@ -34,10 +44,7 @@
                     <i class="fa-solid fa-user"></i>
                 <span class="descricao">Usuário</span></a>
             </li>
-            <li><a href="loja.html" class="itens">
-              <i class="fa-solid fa-store"></i>  </i>
-            <span class="descricao">Loja</span>
-            </a></li>
+
            
 
 <li class="selected"><a href="vendas.html" class="itens">
@@ -64,11 +71,53 @@
     </nav>
 
     <main id="mainvendas">
-  <h1>Vendas nos Últimos 30 Dias</h1>
-  <canvas id="meuGrafico" width="800" height="400px" min-height = "600"></canvas>
+      <div class="alinharGraficos">
+      <div class="box" class="grafico">
+  <h1>Faturamento do Mês</h1>
+  <canvas id="meuGrafico" width="800" height="400px" min-height = "600" ></canvas>
 
+</div>
+
+<div class="box" class="grafico">
+  <h1>Saídas do mês</h1>
+   <canvas id="meuPreju" width="800" height="400px" min-height = "600"></canvas>
+
+  </div>
+  </div>
+
+      <div class="alinharGraficos separaLogo">
+      <div class="box" class="grafico">
+  <h1>Formas de Pagamento</h1>
+  <canvas id="meuFormaPg" width="800" height="400px" min-height = "600" ></canvas>
+
+</div>
+
+  </div>
+
+ <div class="enviarValor" >
+  <input type="text"placeholder ="Escreva o valor" id="iptValor"> <select name="" id="formaDePagamentoSelect">
+    <option value="pix" selected disabled>selecione</option>
+    <option value="pix">pix</option>
+    <option value="credito">Crédito</option>
+    <option value="debito">Débito</option>
+    <option value="dinheiro">Dinheiro</option>
+  </select>
+  <p class="btn" onclick="salvar()" id="btnPesquisa">Registrar valor</p>
+
+  <div class="checks">
+    <div class="contCheck" onclick="registro()" id="registrar"><p>Registrar</p></div>
+    <div class="contCheck" onclick="busca()" id="buscar"><p>Buscar</p></div>
+    <div class="contCheck" onclick="apaga()" id="Apagar"><p>Apagar</p></div>
+   
+    
+
+
+  </div>
+  </div>
 </main>
   
-
+   
 </body>
+
+
 </html>
