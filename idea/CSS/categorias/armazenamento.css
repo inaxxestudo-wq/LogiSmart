@@ -236,3 +236,14 @@ max-width: 100px;
     gap: 6px
     ;
 }
+
+.divTag{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.produtoTag{
+   display: flex;
+    flex-direction: row; 
+}

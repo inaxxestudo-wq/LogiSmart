@@ -1,14 +1,32 @@
 var lista =JSON.parse( localStorage.getItem("produtos"))
 function carregaLista(){
+
+if(location.href.endsWith("adicionar.html")){
+
+var selecionarCategoria = document.getElementById("selecionarCategoria")
+var categorias = JSON.parse(localStorage.getItem("categorias")) ||[]
+categorias.sort()
+for(let i =0;i<categorias.length;i++)
+
+selecionarCategoria.innerHTML += `<option value="${categorias[i]}">${categorias[i]}</option>`
+}
+
+
 var ftUserSide = document.getElementById("ftUser")
 ftUserSide.src = localStorage.getItem(("imgUser"))
 var lista =JSON.parse( localStorage.getItem("produtos"))
-
+var categorias = JSON.parse(localStorage.getItem(("categorias")))||[]
+var prod = "produto"
+categorias.forEach(element => {
+   
+    document.getElementById("categoria").innerHTML += 
+   '<div id="'+element+prod+'" class = "divTag"><h2>'+element+'</h2><div id="'+element+"produtoLista"+'" class = "produtoTag"></div></div>';
+});
 
 for(let i=0;i<lista.length;i++){
 var item = lista[i]
 
-document.getElementById("quatidade").innerHTML += 
+document.getElementById(item.categoria+"produtoLista").innerHTML += 
     '<div class="macarrao" onmouseleave="divproduto(\''+item.nome+'\')"" id="'+item.nome+'">' +
         '<div style="display: flex; flex-direction: row;">' +
             '<p style="margin-left: 10px;" id="tipo">'+item.nome+'</p>' +
@@ -23,21 +41,13 @@ document.getElementById("quatidade").innerHTML +=
         '<input type="number" placeholder="Adicionar valor" id="numADD">' +
     '</div>';
 
+
 }
 
 
 
 
 
-if(location.href.endsWith("adicionar.html")){
-
-var selecionarCategoria = document.getElementById("selecionarCategoria")
-var categorias = JSON.parse(localStorage.getItem("categorias")) ||[]
-categorias.sort()
-for(let i =0;i<categorias.length;i++)
-
-selecionarCategoria.innerHTML += `<option value="${categorias[i]}">${categorias[i]}</option>`
-}
 
 }
 
@@ -89,3 +99,5 @@ if(pesoADD!="")lista[i].pesoMax =lista[i].pesoMax +  Number(pesoADD)
  localStorage.setItem("produtos",JSON.stringify(lista))
 if(control)location.reload()
 }
+
+

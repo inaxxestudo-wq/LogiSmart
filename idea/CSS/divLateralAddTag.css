@@ -54,3 +54,14 @@ transition:
     align-items: center;
     justify-content: center;
 }
+.opcaoSelect{
+display: flex;
+flex-direction: row;
+gap: 5px;
+}
+.opcaoSelect .btn{
+    width: 100px;
+}
+#deletarCategoria{
+    background-color: red;
+}
