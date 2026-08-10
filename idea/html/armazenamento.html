@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/categorias/armazenamento.css">
     <script src="../JS/Poslogin.js"></script>
     <script src="../JS/armazenamento.js"></script>
+    <script src="../JS/direcionarNav.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,25 +30,22 @@
         </div>
 
         <ul>
-                     <li ><a href="Poslogin.html"  class="itens">
+                     <li onclick="DirecionarNav('Poslogin.html')"><a href="Poslogin.html"  class="itens">
                 <i class="fa-solid fa-house"></i>
                 <span class="descricao">Página inicial</span>
             </a></li>
-            <li>
+            <li onclick="DirecionarNav('usuario.html')">
                 <a href="usuario.html" class="itens">
                     <i class="fa-solid fa-user"></i>
                 <span class="descricao">Usuário</span></a>
             </li>
-            <li><a href="loja.html" class="itens">
-              <i class="fa-solid fa-store"></i>  </i>
-            <span class="descricao">Loja</span>
-            </a></li>
-            <li><a href="vendas.html" class="itens">
+          
+            <li onclick="DirecionarNav('vendas.html')"><a href="vendas.html" class="itens">
 <i class="fa-solid fa-chart-line"></i>
 <span>Vendas</span>
             </a></li>
    
-             <li class="selected"><a href="armazenamento.html" class="itens">
+             <li onclick="DirecionarNav('armazenamento.html')" class="selected"><a href="armazenamento.html" class="itens">
                 <i class="fa-solid fa-boxes-stacked"></i>
                 <span class="descricao">Armazenamento</span>
             </a></li>
@@ -85,7 +83,7 @@
 
 
 <div id="quatidade" class="todas">
-<!--
+<!--massasprodutoLista
 <div class="macarrao" onmouseleave="divAR()">
     <div style="display: flex; flex-direction: row;"><p style="margin-left: 10px;" id="tipo">Arroz</p> <Button style="size: 8px; width: 16px;" onclick="apaga()">X</Button></div>
     
@@ -100,6 +98,10 @@
 
 -->
 
+</div>
+
+<div id="categoria">
+    
 </div>
 <div class="organizar">
 

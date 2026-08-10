@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/categorias/usuario.css">
     <script src="../JS/Poslogin.js"></script>
     <script src="../JS/usuario.js"></script>
+    <script src="../JS/direcionarNav.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
@@ -18,34 +19,31 @@
 </head>
 <body onload="carregaftUser()">
 
-    <nav onclick="muda()" id="barraLateral">
+   <nav onclick="muda()" id="barraLateral">
 
 <div id="barraLateralContent">
+    
         <div class="user">
-            <img id="ftUser" src="../FOTOS/LOGO/images.jpeg" alt="">
+            <img src="../FOTOS/LOGO/images.jpeg" alt="" id="ftUser">
         </div>
 
         <ul>
-          
-            <li ><a href="Poslogin.html"  class="itens">
+                     <li onclick="DirecionarNav('Poslogin.html')"><a href="Poslogin.html"  class="itens">
                 <i class="fa-solid fa-house"></i>
                 <span class="descricao">Página inicial</span>
             </a></li>
-             <li class="selected">
+            <li onclick="DirecionarNav('usuario.html')" class="selected">
                 <a href="usuario.html" class="itens">
                     <i class="fa-solid fa-user"></i>
                 <span class="descricao">Usuário</span></a>
             </li>
-            <li><a href="loja.html" class="itens">
-              <i class="fa-solid fa-store"></i>  </i>
-            <span class="descricao">Loja</span>
-            </a></li>
-            <li><a href="" class="itens">
+          
+            <li onclick="DirecionarNav('vendas.html')"><a href="vendas.html" class="itens">
 <i class="fa-solid fa-chart-line"></i>
 <span>Vendas</span>
-
             </a></li>
-            <li><a href="armazenamento.html" class="itens">
+   
+             <li onclick="DirecionarNav('armazenamento.html')" ><a href="armazenamento.html" class="itens">
                 <i class="fa-solid fa-boxes-stacked"></i>
                 <span class="descricao">Armazenamento</span>
             </a></li>

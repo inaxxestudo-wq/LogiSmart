@@ -11,48 +11,46 @@
     <script src="../JS/Poslogin.js"></script>
 <script src="../JS/addArmazem.js"></script>
 <script src="../JS/ListarArmazenamento.js"></script>
+<script src="../JS/direcionarNav.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/divLateralAddTag.css">
 </head>
 <body onload="carregaLista()">
 
-    <nav onclick="muda()" id="barraLateral">
+     <nav onclick="muda()" id="barraLateral">
 
 <div id="barraLateralContent">
+    
         <div class="user">
             <img src="../FOTOS/LOGO/images.jpeg" alt="" id="ftUser">
         </div>
 
         <ul>
-            <li ><a href="Poslogin.html"  class="itens">
+                     <li onclick="DirecionarNav('Poslogin.html')"><a href="Poslogin.html"  class="itens">
                 <i class="fa-solid fa-house"></i>
                 <span class="descricao">Página inicial</span>
             </a></li>
-            <li>
+            <li onclick="DirecionarNav('usuario.html')">
                 <a href="usuario.html" class="itens">
                     <i class="fa-solid fa-user"></i>
                 <span class="descricao">Usuário</span></a>
             </li>
-            <li><a href="loja.html" class="itens">
-              <i class="fa-solid fa-store"></i>  </i>
-            <span class="descricao">Loja</span>
-            </a></li>
-            <li><a href="" class="itens">
+          
+            <li onclick="DirecionarNav('vendas.html')"><a href="vendas.html" class="itens">
 <i class="fa-solid fa-chart-line"></i>
 <span>Vendas</span>
-
             </a></li>
-            <li class="selected"><a href="armazenamento.html" class="itens">
+   
+             <li onclick="DirecionarNav('armazenamento.html')" class="selected"><a href="armazenamento.html" class="itens">
                 <i class="fa-solid fa-boxes-stacked"></i>
                 <span class="descricao">Armazenamento</span>
             </a></li>
-            
         </ul>
         
 </div>
 <div class="logout">
-
 
         <div id="segura" class="separaLogo" onclick="principal()">
             <i class="fa-solid fa-right-from-bracket"></i>
@@ -65,10 +63,6 @@
 
 
     <main id="altura" >
-
-
-
-
        <div class="coluna" id="linkMeio">
 
 <div class="logo">
@@ -77,22 +71,32 @@
 </div>
 <div class="texto"><h1>Adicionar</h1></div>
 
+<div class="container">
 
-<div class="sub">
+<div class="sub" id="principalSub">
 <a class="volta" href="armazenamento.html">Voltar</a>
     <div class="add">
 <h2>Foto do produto</h2>
-<input type="file" name="" id="foto">
+<input type="file" name="" id="foto" accept="image/*">
     <div class="add">
 <h2>Nome do Produto</h2>
 <input type="text" name="" id="nome">
 </div>
+    <div class="add" id="divSelect">
+<h2>Categoria do Produto</h2>
+<select name="" id="selecionarCategoria">
+    <option value="0" disabled selected>Selecionar</option>
+    
+</select>
+<div class="opcaoSelect"><p class="btn" onclick="aparecer()">criar categoria</p><p class="btn" id="deletarCategoria" onclick="apagarCategoria()">Deletar</p></div>
+
+</div>
     <div class="add">
-<h2>Quantidade mínima (em KG)</h2>
+<h2>Quantidade mínima</h2>
 <input type="text" name="" id="pMin">
 </div>
     <div class="add">
-<h2>Quantidade máxima (em KG)</h2>
+<h2>Quantidade em estoque</h2>
 <input type="text" name="" id="pMax">
 </div>
 
@@ -100,12 +104,21 @@
 
 
 
+    </div>
+
+
+<div class="sub2content" id="divSec">
+    <div class="sub2">
+    <h2>Qual tag deseja criar?</h2>
+    <input type="text" placeholder="Escreva aqui a categoria" id="inputCategoria">
+</div>
+<p id="adicionarpp" onclick="criarCategoria()">Criar categoria</p>
+</div>
 </div>
 
 
 
-<p id="adicionarpp" onclick="add()">Criar</p>
-
+<p id="adicionarppp"  onclick="add()">Criar</p>
     </main>
 </body>
 </html>

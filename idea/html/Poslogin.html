@@ -17,33 +17,31 @@
 </head>
 <body onload="carregar()">
 
-    <nav onclick="muda()" id="barraLateral">
+     <nav onclick="muda()" id="barraLateral">
 
 <div id="barraLateralContent">
+    
         <div class="user">
             <img src="../FOTOS/LOGO/images.jpeg" alt="" id="ftUser">
         </div>
 
         <ul>
-                     <li class="selected" ><a href="Poslogin.html"  class="itens" >
+                     <li onclick="DirecionarNav('Poslogin.html')" class="selected"><a href="Poslogin.html"  class="itens">
                 <i class="fa-solid fa-house"></i>
                 <span class="descricao">Página inicial</span>
             </a></li>
-            <li>
+            <li onclick="DirecionarNav('usuario.html')">
                 <a href="usuario.html" class="itens">
                     <i class="fa-solid fa-user"></i>
                 <span class="descricao">Usuário</span></a>
             </li>
-            <li><a href="loja.html" class="itens">
-              <i class="fa-solid fa-store"></i>  </i>
-            <span class="descricao">Loja</span>
-            </a></li>
-            <li><a href="vendas.html" class="itens">
+          
+            <li onclick="DirecionarNav('vendas.html')"><a href="vendas.html" class="itens">
 <i class="fa-solid fa-chart-line"></i>
 <span>Vendas</span>
-
             </a></li>
-            <li><a href="armazenamento.html" class="itens">
+   
+             <li onclick="DirecionarNav('armazenamento.html')" ><a href="armazenamento.html" class="itens">
                 <i class="fa-solid fa-boxes-stacked"></i>
                 <span class="descricao">Armazenamento</span>
             </a></li>
