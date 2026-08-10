@@ -1,0 +1,63 @@
+nav{
+    background-color:#ffbc0b;
+    
+    text-align: center;
+    padding: 12px;
+    color:  white
+    ;
+    
+}
+
+#dropinho{
+    position: relative;
+}
+
+#DROPINHO{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+#DROPINHO2{
+    cursor: pointer;
+    display: none;
+    position: relative;
+    
+}
+
+#escondido a{
+    border: solid 1px black;
+    display:none;
+    cursor: pointer; padding: 5px;
+   text-decoration: none;
+   color: white;
+
+}
+#escondido a :hover{
+    border: solid 1px black;
+    display:none;
+    cursor: pointer; padding: 5px;
+   background-color: #ffbc0b;;
+
+}
+
+#drop:hover, #drop2:hover , #drop1:hover{
+    background-color: #736c8b;
+}
+
+#esc{
+    background-color: #ffbc0b;;
+
+    text-align: center;
+    align-items: center;
+}
+
+#escondido {
+    margin-top: 12px;
+    background-color:#d94e3d
+
+    ;
+    text-align: center;
+    display: inline-block;
+  position: absolute;
+    left: 48.1%;
+}

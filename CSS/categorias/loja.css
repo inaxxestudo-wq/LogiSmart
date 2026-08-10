@@ -1,0 +1,5 @@
+.coluna{
+display: flex;
+flex-direction: column;
+}
+
