@@ -1,0 +1,58 @@
+footer{ display: flexbox;
+   
+ background-color:#361f65  ; 
+
+margin-top: 40px;
+  padding: 30px;
+  color: #ffbd59;;
+}
+
+
+
+footer img{
+    width: 160px;
+  
+}
+
+.rodape {
+  flex: 1; /* faz o conteúdo crescer para ocupar o espaço disponível */
+}
+
+.box{
+   width: 50%;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 10px; /* Adiciona um pequeno espaçamento interno para o texto não colar nas bordas */
+}
+
+#boxes{
+     display: flexbox;
+}
+
+#Links{
+    background-color:#361f65 ;
+      height: 100px;
+      text-align: center;
+      
+      
+}
+#linkes{
+    color: white;
+  
+    
+}
+#centro{
+    text-align: center;
+    list-style-type: none;
+    margin-right: 24px;
+    margin-top: 10px;
+}
+#linha {
+   display: inline-block;
+}
+#linha img{
+
+width: 50px;
+
+margin-left: 12px;
+}

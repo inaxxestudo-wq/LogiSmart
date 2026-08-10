@@ -1,0 +1,23 @@
+header #logo{ 
+
+    text-align: center; margin-bottom: 0%; 
+    width: 260px; margin-bottom: 0%; margin-top: 0px; padding-bottom: 5px;
+   }
+   
+   #alinha{
+       text-align: center;
+   }
+
+   body{text-align: center;
+    background-color:rgb(214, 214, 214);
+    display: flex;              /* usa Flexbox */
+  flex-direction: column;     /* os elementos ficam em coluna (de cima para baixo) */
+  min-height: 100vh;          
+   }
+   *{
+    margin:0px;
+    
+   }
+   #esquerda{
+    text-align: start;
+}

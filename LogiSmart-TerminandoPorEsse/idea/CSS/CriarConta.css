@@ -1,0 +1,17 @@
+#retorna{
+    margin-left: 12px;
+    background-color:#361f65 ;
+    
+}
+#retorna a {
+    
+    color: white;
+    text-decoration: none;
+    
+}
+#logar{
+    margin-right: 12px;
+}
+*{ 
+font-family: "Share Tech", sans-serif;
+}
